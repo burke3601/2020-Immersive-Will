@@ -17,15 +17,12 @@ function greatest_divisor(n, m) {
 
     while(x > 0) {
         if ((m % x) === 0 && ((n % x) === 0)){
-            
             break
         }
         else {
             return x --
         }
-
     }
-
     return x
 }
 
