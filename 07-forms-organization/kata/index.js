@@ -11,7 +11,8 @@ app.engine('html', es6Renderer);
 app.set('views', 'templates');
 app.set('view engine', 'html');
 
-
+//new global array for create page
+const db =[];
 
 const items = {
     chair: "you sit in it",
@@ -51,8 +52,17 @@ app.get('/create', (req, res) =>{
     res.render('create')
 })
 
+
+
 app.post('/create', (req, res) =>{
-    const food =req.body
+    console.log(req.body)
+    const food =req.body.food;
+    db.push({food});
+    res.redirect('/thankyou');
+})
+
+app.get('/thankyou', (req, res) =>{
+    res.render('thankyou')
 })
 
 server.listen( PORT, () =>{
