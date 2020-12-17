@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Warmup! 
+=======
+# Warmup!
+>>>>>>> main
 
 
 1. Suppose you have an express app that serves a page that shows a list of pet names.

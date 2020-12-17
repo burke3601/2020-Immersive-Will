@@ -1,5 +1,6 @@
 # Agenda
 
+<<<<<<< HEAD
 - Warmup
 - Discuss plans for backend project
 - Organizing into Routers and Controllers
@@ -10,6 +11,16 @@
     - Saving data form data into the database
     - Retrieving data from the database
 - *Creating and merging feature branches
+=======
+- [X] Warmup
+- [X] Discuss plans for backend project
+- Introduction to SQL Databases
+    - Confirm ElephantSQL signup
+    - First steps with Sequelize
+    - Saving data form data into the database
+    - Retrieving data from the database
+
+>>>>>>> main
 
 ## Using `Sequelize` and ElephantSQL (different from Learning Portal)
 

@@ -1,0 +1,7 @@
+
+<h1>Movie List</h1>
+<a href="/movies/new">Add new movie</a>
+<br>
+<ul>
+${movies.map(m => `<li>${m.title}, ${m.genre}, ${m.year}, ${m.rating} )</li>`).join('')}
+</ul>
