@@ -1,8 +1,26 @@
 ${header}
-<h1>Snack List</h1>
-<a href="/snacks/new">Add new snack</a>
+<style>
+    body{
+      display:flex;
+      
+      flex-wrap:wrap;
+      justify-content: space-around;
+    }
+    .containerSnacks {
+        font-size: large;
+        background-color: aquamarine;
+    }
+    .addNew {
+        background-color: blueviolet;
+    }
+    .headingClass {
+        background-color: chocolate;
+    }
+  </style>
+<h1 class="headingClass">Snack List</h1>
+<a class="addNew" href="/snacks/new">Add new snack</a>
 <br>
-<ul>
+<ul class ="containerSnacks">
 ${snacks.map(s => `<li>${s.title}: ${s.category} - (${s.healthiness})</li>`).join('')}
 </ul>
 ${footer}
