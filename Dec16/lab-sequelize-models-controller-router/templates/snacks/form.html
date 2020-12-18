@@ -1,6 +1,13 @@
 ${header}
+<style>
+  .containerSnacks{
+    display:flex;
+    flex-direction: column;
+  }
+</style>
 <h1>Add New Product</h1>
 <form method="POST">
+  <div class="containerSnacks">
   <label>
     Title:
     <input name="title" type="text" autofocus />
@@ -17,6 +24,7 @@ ${header}
   </label>
   <br>
  <input type="submit" value="add" />
+</div>
 </form>
 
 ${footer}
